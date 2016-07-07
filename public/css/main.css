@@ -1,0 +1,42 @@
+.gif-frame {
+  border: 2px solid black;
+  margin-left: 5px;
+  box-shadow: 10px 10px 5px #888888; 
+}
+.gif-frame:hover{
+  border: 2px solid white;
+  /*margin-left: 5px;*/
+  box-shadow: 10px 10px 5px #888888;
+}
+.img-div {
+  margin-top: 20px;
+}
+form {
+  margin-left: 2px;
+  height: 50px;
+  width: 650px;
+}
+input[type=text] {
+  height: 50px;
+  width: 300px;
+  font-size: 20px;
+}
+input[type=submit] {
+  margin-left: 10px;
+  height: 40px;
+  width: 250px;
+}
+.focus-frame {
+  border: 2px solid black;
+  margin-top: 50px;
+  margin-left: 50px;
+  box-shadow: 10px 10px 5px #888888;
+}
+.focus-frame:hover{
+  border: 2px solid white;
+  /*margin-left: 5px;*/
+  box-shadow: 10px 10px 5px #888888;
+}
+#gif-entry{
+
+}
