@@ -67,7 +67,6 @@ var onGiphyResponse = function(response){
 var GifStore = assign({}, EventEmitter.prototype, {
 
   emitChange: function() {
-    console.log("Gif Store emitting change");
     this.emit(CHANGE_EVENT);
   },
 
@@ -94,16 +93,13 @@ AppDispatcher.register(function(action) {
   var focusImage;
 
   if(action.actionType === GifConstants.GIF_SEARCH) {
-      console.log("GifStore received as search term:",action.searched);
       searched = action.searched.trim();
       if (searched !== '') {
-        console.log("GifStore about to make api call");
         makeApiCall(searched);
       }
   }
   else if (action.actionType ===  GifConstants.GIF_FOCUS){
     focusImage = action.focusImage.trim();
-    console.log("GifStore received as focusImage:",focusImage);
     if (focusImage !== '') {
       focusImageFromObject(focusImage);
       GifStore.emitChange();
